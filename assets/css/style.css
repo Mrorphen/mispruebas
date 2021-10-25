@@ -11,6 +11,8 @@ header{
 
 #logo{	
 	float: left;
+	width: 250px;
+	height: 109px;
 }
 
 #menu{
@@ -57,7 +59,7 @@ h2{
 }
 
 #banner1{
-	width: 100%;
+	width: 88%;
 }
 
 #container-w{
