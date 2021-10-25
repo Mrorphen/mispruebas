@@ -124,6 +124,10 @@ h2{
 	display: none;
 }
 
+#goTop:hover{
+	background-color: purple;
+}
+
 html{
 	scroll-behavior: smooth;
 }
