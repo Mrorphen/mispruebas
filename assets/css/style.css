@@ -1,0 +1,148 @@
+body{
+	padding: 0;
+	margin:0;
+	overflow-x: hidden;
+}
+
+header{
+	margin:auto;
+	width: 80%;	
+}
+
+#logo{	
+	float: left;
+}
+
+#menu{
+	float: right;
+	overflow: hidden;
+}
+
+#menu ul{
+	list-style-type: none;
+	line-height: 60px;
+	
+}
+
+#menu ul li{	
+	float: left;	
+}
+
+#menu ul li a{	
+	text-decoration: none;
+	padding: 15px;
+	color: purple;
+	font-weight: bold;
+}
+
+#menu ul li a:hover{
+	text-decoration: none;
+	padding: 15px;
+	font-weight: bold;
+	border-bottom: 2px solid purple;
+}
+
+section{
+	clear: both;
+	width: 100%;
+	display: flex;	
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+	text-align: center;
+}
+
+#banner1{
+	width: 100%;
+}
+
+#container-w{
+	width: 100%;
+	text-align: center;	
+	overflow: hidden;
+	border-bottom: 1px solid #dddddd;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#container-f{
+	width: 100%;
+	text-align: center;	
+	overflow: hidden;
+	border-bottom: 1px solid #dddddd;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#container-p{
+	width: 100%;
+	text-align: center;	
+	overflow: hidden;
+	border-bottom: 1px solid #dddddd;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.columnas{
+	width: 100%;
+	display: flex;	
+	justify-content: space-evenly;
+	text-align: justify;	
+}
+
+.columna{
+	display: flex;
+	width: 40%;
+}
+
+.columna-sola{
+	display: flex;
+	width: 87%;
+}
+
+/* boton arriba*/
+#goTop{
+	width: 50px;
+	height: 50px;
+	background-color: rgb(187,187,187);	
+	color: white;
+	display: flex;
+	justify-content: center;/*centra horizontal*/
+	align-items: center;/*centra vertical*/
+	font-size: 30px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/*fin boton arriba*/
+
+footer{
+	clear: both;
+	width: 100%;
+	background-color: #222222;
+	color:#dddddd;
+	padding: 15px;
+	text-align: center;
+}
+
+footer a{
+	color:white;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color:purple;
+	cursor:pointer;
+}
