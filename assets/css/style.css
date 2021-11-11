@@ -2,6 +2,7 @@ body{
 	padding: 0;
 	margin:0;
 	overflow-x: hidden;
+	font-size: 1em;
 }
 
 header{
@@ -16,6 +17,16 @@ header{
 	font-size: 18px;
 }
 
+#logotexto{
+	width: 115px;
+	font-weight: bold;
+	background-color: purple;
+	color:white;
+	padding: 5px;
+	text-align: center;
+	display: none;
+}
+
 nav{
 	display: flex;
 	justify-content: center;
@@ -27,6 +38,10 @@ nav{
 	height: 109px;
 }
 
+#menu{
+	margin-left: -20px;
+}
+
 header ul{
 	position: relative;
 	display: flex;
@@ -36,6 +51,7 @@ header ul{
 
 header ul li{
 	list-style: none;
+
 }
 
 header ul li a{
@@ -178,6 +194,7 @@ h2{
 	border-radius: 50%;
 	cursor: pointer;
 	display: none;
+	transition:0.3s ease;
 }
 
 #goTop:hover{
@@ -207,4 +224,86 @@ footer a{
 footer a:hover{
 	color:purple;
 	cursor:pointer;
+}
+
+@media (max-width: 880px){
+
+	body{
+		font-size: 0.8em;
+	}
+
+	#logotexto{
+		display: initial;
+	}
+
+	#logo{
+		/*
+		width: 180px;
+		height: 90px;
+		margin-left: 40px;
+    	margin-top: 15px;
+    	*/
+    	display: none;
+	}
+
+	header, div#logo{
+		height: 60px;
+		background-color: rgb(187,187,187);	
+	}
+
+	header ul li a{
+		padding: 10px;
+	}
+
+	header ul li a:hover{
+		padding: 10px;
+		text-shadow: 0px 0px 7px #fff;
+	}
+
+	#menu{
+		/*transform: translateX(-175px);*/
+		margin: 0px auto;
+
+	}
+
+	section{
+		margin-top:70px;
+	}
+	
+}
+
+@media (max-width: 610px){
+
+	#logotexto{
+		display: none;
+	}
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+
+	header, div#logo{
+		height: 160px;
+	}
+
+	header ul li{
+		margin-left: -60px;
+		margin-bottom: 10px;
+	}
+
+	header ul li a{			
+		padding: 10px;
+	}
+
+	header ul li a:hover{
+		padding: 10px;
+	}
+
+	section{
+		margin-top:170px;
+	}
 }
